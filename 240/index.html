@@ -17,16 +17,18 @@
     <div id="popup"></div>
     <script src="app.js"></script>
     <script src="plugin/behaviors/index.js"></script>
-    <script src="plugin/screen-diff/index.js"></script>
     <script src="plugin/packages/index.js"></script>
+    <script src="plugin/screen-diff/index.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVWC4GKEYS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-FVWC4GKEYS');
-        gtag('allureVersion', 'dev')
-        gtag('reportUuid', 'fe6de606-1abe-4049-afcb-4877f96fe801')
+        gtag('config', 'G-FVWC4GKEYS', {
+          'allureVersion': 'dev',
+          'reportUuid': '4373cd9e-457c-43c5-9b0d-d0428c24d3a1',
+          'single_file': false
+        });
     </script>
 </body>
 </html>
